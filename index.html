@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <img src="./assets/img/billi.jpg" id="background" />
+    <audio src="./assets/music/Billie Eilish - BIRDS OF A FEATHER.mp3" id="song"></audio>
+    <div class="container">
+      <div class="box"></div>
+      <img src="./assets/images/lemonade.png" id="thumbnail" />
+      <img src="./assets/icons/play.png" onclick="playPause()" id="play-pause" />
+      <img src="./assets/icons/forward.png" onclick="nextSong()" id="next-song" />
+      <img src="./assets/icons/backward.png" onclick="previousSong()" id="previous-song" />
+      <div class="song-artist">Billie Eilish</div>
+      <div class="song-title">BIRDS OF A FEATHER</div>
+      <input type="range" id="progress-bar" min="0" max="" value="0" onchange="changeProgressBar()" />
+      <div class="currentTime"></div>
+      <div class="durationTime"></div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
